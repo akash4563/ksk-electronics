@@ -1,9 +1,10 @@
 import '../styles/Courses.scss';
-
+import Course from '../components/constants/Courses';
 const Courses = () => {
     return (
         <div className='courses'>
-            <h1>Courses</h1>
+            <Course />
+
         </div>
     );
 };
