@@ -3,16 +3,15 @@ import React from 'react';
 import { Button } from './UI/Button';
 import '../styles/Banner.css';
 import { useAuth } from '../contexts/AuthContext';
-import {  useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 function Banner() {
   const { signin } = useAuth();
   const history = useHistory();
   const handleSignIn = async () => {
-    
     await signin();
     history.push('/dashboard');
-};
+  };
   return (
     <div className='hero-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
