@@ -1,10 +1,14 @@
+import Banner from '../components/Banner';
 import '../styles/Home.scss';
-
+import Cards from '../components/Cards';
+import TeamSection from '../components/TeamSection';
 const Home = () => {
     return (
-        <div className='home'>
-            <h1>Home</h1>
-        </div>
+        <>
+            <Banner />
+            <Cards />
+            <TeamSection />
+        </>
     );
 };
 
